@@ -47,7 +47,8 @@ return packer.startup(function(use)
 	use 'nvim-lualine/lualine.nvim'
 	use 'akinsho/bufferline.nvim'
 	use "akinsho/toggleterm.nvim"
-
+  use "windwp/nvim-autopairs"
+	
   -- Colorschemes
 use "EdenEast/nightfox.nvim"
 

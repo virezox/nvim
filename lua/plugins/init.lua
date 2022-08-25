@@ -4,4 +4,4 @@ require("plugins.colorscheme")
 require("plugins.lualine")
 require("plugins.bufferline")
 require("plugins.toggleterm")
-
+require("plugins.nvim-autopairs")
