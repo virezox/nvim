@@ -42,13 +42,15 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use 'wbthomason/packer.nvim' -- Packer can manage itself
+	use 'nvim-lua/plenary.nvim'
   use 'kyazdani42/nvim-web-devicons'
 	use 'kyazdani42/nvim-tree.lua'
 	use 'nvim-lualine/lualine.nvim'
 	use 'akinsho/bufferline.nvim'
 	use "akinsho/toggleterm.nvim"
   use "windwp/nvim-autopairs"
-	
+	use 'lewis6991/impatient.nvim'
+
   -- Colorschemes
 use "EdenEast/nightfox.nvim"
 
@@ -62,10 +64,13 @@ use "EdenEast/nightfox.nvim"
 
 
   -- Telescope
-
+	use 'nvim-telescope/telescope.nvim'
 
   -- Treesitter
-
+use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    }
 
   -- Git
 

@@ -15,11 +15,20 @@ keymap("n", "<c-k>", "<c-w>k", opts)
 keymap("n", "<c-l>", "<c-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<c-up>", ":resize -2<cr>", opts)
-keymap("n", "<c-down>", ":resize +2<cr>", opts)
-keymap("n", "<c-left>", ":vertical resize -2<cr>", opts)
-keymap("n", "<c-right>", ":vertical resize +2<cr>", opts)
+keymap("n", "<c-up>", "<cmd>resize -2<cr>", opts)
+keymap("n", "<c-down>", "<cmd>resize +2<cr>", opts)
+keymap("n", "<c-left>", "<cmd>vertical resize -2<cr>", opts)
+keymap("n", "<c-right>", "<cmd>vertical resize +2<cr>", opts)
 
 -- Navigate buffers
-keymap("n", "<s-l>", ":bnext<cr>", opts)
-keymap("n", "<s-h>", ":bprevious<cr>", opts)
+keymap("n", "<s-l>", "<cmd>bnext<cr>", opts)
+keymap("n", "<s-h>", "<cmd>bprevious<cr>", opts)
+
+-- NvimTree
+keymap("n", "<leader>t", "<cmd>NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>gt", "<cmd>NvimTreeFocus<cr>", opts)
+
+-- Telescope
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+
