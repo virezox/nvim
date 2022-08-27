@@ -4,6 +4,7 @@ require("nvim-treesitter.configs").setup({
 		"javascript",
 		"lua",
 		"rust",
+		"vim",
 	},
 	sync_install = false,
 	auto_install = true,
@@ -12,7 +13,7 @@ require("nvim-treesitter.configs").setup({
 		enable = true,
 		additional_vim_regex_highlighting = false,
 	},
-  autopairs = {
+	autopairs = {
 		enable = true,
-	}		
+	}
 })

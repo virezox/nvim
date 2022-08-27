@@ -5,7 +5,7 @@ local keymap = vim.api.nvim_set_keymap
 -- Remap space as leader key
 keymap("", "<space>", "<nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader= " "
+vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
@@ -31,4 +31,3 @@ keymap("n", "<leader>gt", "<cmd>NvimTreeFocus<cr>", opts)
 -- Telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
-
