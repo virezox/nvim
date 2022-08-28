@@ -43,13 +43,18 @@ return packer.startup(function(use)
   -- My plugins here
   use('wbthomason/packer.nvim') -- Packer can manage itself
   use('nvim-lua/plenary.nvim')
+  use('numToStr/Comment.nvim')
+  use('JoosepAlviste/nvim-ts-context-commentstring')
   use('kyazdani42/nvim-web-devicons')
   use('kyazdani42/nvim-tree.lua')
   use('nvim-lualine/lualine.nvim')
   use('akinsho/bufferline.nvim')
   use('akinsho/toggleterm.nvim')
+  use('ahmedkhalf/project.nvim')
   use('windwp/nvim-autopairs')
   use('lewis6991/impatient.nvim')
+
+  use('goolord/alpha-nvim')
 
   -- Colorschemes
   use('EdenEast/nightfox.nvim')
@@ -68,7 +73,7 @@ return packer.startup(function(use)
 
   -- LSP
   use('neovim/nvim-lspconfig') -- Configurations for Nvim LSP
-  use({ 'jose-elias-alvarez/null-ls.nvim', commit = 'ff40739e5be6581899b43385997e39eecdbf9465' })
+  use({ 'jose-elias-alvarez/null-ls.nvim' })
 
   -- Telescope
   use('nvim-telescope/telescope.nvim')
@@ -82,6 +87,7 @@ return packer.startup(function(use)
   })
 
   -- Git
+  use('lewis6991/gitsigns.nvim')
 
   -- DAP
 

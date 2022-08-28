@@ -13,3 +13,4 @@ opt.splitbelow = true
 opt.splitright = true
 opt.fileencoding = 'utf-8'
 opt.cursorline = true
+opt.termguicolors = true
