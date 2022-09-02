@@ -1,9 +1,11 @@
 require("nvim-treesitter.configs").setup({
   ensure_installed = {
     "go",
+    "gomod",
     "javascript",
     "lua",
     "rust",
+    "toml",
     "vim",
   },
   sync_install = false,

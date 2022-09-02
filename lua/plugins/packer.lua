@@ -59,7 +59,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use("EdenEast/nightfox.nvim")
 
-  -- cmp plugins
+  -- Cmp plugins
   use("hrsh7th/nvim-cmp") -- Autocompletion plugin
   use("hrsh7th/cmp-nvim-lsp") -- LSP source for nvim-cmp
   use("hrsh7th/cmp-buffer")
@@ -69,14 +69,17 @@ return packer.startup(function(use)
   use("L3MON4D3/LuaSnip") -- Snippets plugin
   use("petertriho/cmp-git")
 
-  -- snippets
+  -- Snippets
 
   -- LSP
   use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
   use("jose-elias-alvarez/null-ls.nvim")
 
   -- Telescope
   use("nvim-telescope/telescope.nvim")
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
   -- Treesitter
   use({
@@ -96,6 +99,7 @@ return packer.startup(function(use)
   use("nvim-telescope/telescope-dap.nvim")
   use("rcarriga/cmp-dap")
   use("leoluz/nvim-dap-go")
+  use("simrat39/rust-tools.nvim")
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
