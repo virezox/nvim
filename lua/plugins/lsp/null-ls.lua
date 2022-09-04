@@ -5,6 +5,7 @@ null_ls.setup({
   debug = false,
   sources = {
     formatting.stylua,
+    formatting.rustfmt,
   },
   on_attach = function(client)
     if client.resolved_capabilities.document_formatting then
