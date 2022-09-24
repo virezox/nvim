@@ -51,9 +51,9 @@ return packer.startup(function(use)
   use("akinsho/bufferline.nvim")
   use("akinsho/toggleterm.nvim")
   use("ahmedkhalf/project.nvim")
+  use("norcalli/nvim-colorizer.lua")
   use("windwp/nvim-autopairs")
   use("lewis6991/impatient.nvim")
-
   use("goolord/alpha-nvim")
 
   -- Colorschemes
